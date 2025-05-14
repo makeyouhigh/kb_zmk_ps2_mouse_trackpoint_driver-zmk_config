@@ -22,32 +22,12 @@
     status = "okay";
 
 };
-/ {
-    mouse_ps2: mouse_ps2 {
-        status = "disabled";
-	compatible = "zmk,input-listener";
-    };
-    mouse_ps2_input_listener: mouse_ps2_input_listener {
-	status = "disabled";
-	compatible = "zmk,input-listener";
-	device = <&mouse_ps2>;
-    };
-};
 
 / {
 	mouse_ps2: mouse_ps2 {
 		status = "disabled";
 		compatible = "zmk,input-mouse-ps2";
 
-#ifdef MOUSE_PS2_DRIVER_UART
-		ps2-device = <&uart_ps2>;
-#else
-		ps2-device = <&gpio_ps2>;
-#endif
-
-#ifdef MOUSE_PS2_PIN_RST_PRO_MICRO
-		rst-gpios = MOUSE_PS2_PIN_RST_PRO_MICRO;
-#endif
 	};
 
 	mouse_ps2_input_listener: mouse_ps2_input_listener {
