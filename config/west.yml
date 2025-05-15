@@ -14,6 +14,8 @@ manifest:
       url-base: https://github.com/infused-kim
     - name: badjeff
       url-base: https://github.com/badjeff
+    - name: makeyouhigh
+      url-base: https://github.com/makeyouhigh
   projects:
     - name: eyelash_sofle
       url: https://github.com/a741725193/zmk-sofle
