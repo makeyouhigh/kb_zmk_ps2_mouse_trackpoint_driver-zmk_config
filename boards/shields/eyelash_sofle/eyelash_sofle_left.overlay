@@ -25,13 +25,12 @@
 
 / {
 	mouse_ps2: mouse_ps2 {
-		status = "okay";
+		status = "disabled";
 		compatible = "zmk,input-mouse-ps2";
-
 	};
 
 	mouse_ps2_input_listener: mouse_ps2_input_listener {
-		status = "okay";
+		status = "disabled";
 		compatible = "zmk,input-listener";
 		device = <&mouse_ps2>;
 	};
