@@ -1,9 +1,3 @@
-/*
-*
-* Copyright (c) 2021 Darryl deHaan
-* SPDX-License-Identifier: MIT
-*
-*/
 #include "eyelash_sofle.dtsi"
 
 &kscan0 {
@@ -31,8 +25,8 @@
 
 #define MOUSE_PS2_UART_BAUD_RATE <14400>
 
-#define MOUSE_PS2_PIN_UNEXPOSED_TX <NRF_PSEL(UART_TX, 0, 5)>
-#define MOUSE_PS2_PIN_UNEXPOSED_RX <NRF_PSEL(UART_RX, 0, 7)>
+#define MOUSE_PS2_PIN_UNEXPOSED_TX <NRF_PSEL(UART_TX, 1, 4)>
+#define MOUSE_PS2_PIN_UNEXPOSED_RX <NRF_PSEL(UART_RX, 1, 6)>
 
 #define MOUSE_PS2_DT_PRESENT
 
