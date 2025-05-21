@@ -85,6 +85,7 @@
 &cryptocell {interrupts = < 42 3 >;
 };
 
+/*
 &pinctrl {
 	uart0_ps2_default: uart0_ps2_default {
 		group1 {
@@ -108,7 +109,7 @@
 		};
 	};
 };
-
+*/
 &pinctrl {
 	uart1_ps2_default: uart1_ps2_default {
 		group1 {
@@ -140,16 +141,16 @@
   	compatible = "nordic,nrf-uarte";
 
   	current-speed = MOUSE_PS2_UART_BAUD_RATE;
-  	pinctrl-0 = <&uart0_ps2_default>;
-  	pinctrl-1 = <&uart0_ps2_off>;
+//  	pinctrl-0 = <&uart0_ps2_default>;
+//  	pinctrl-1 = <&uart0_ps2_off>;
 
-  	pinctrl-names = "default", "sleep";
+//  	pinctrl-names = "default", "sleep";
 
   	uart_ps2: uart_ps2 {
   		status = "disabled";
   		compatible = "uart-ps2";
   		scl-gpios = MOUSE_PS2_PIN_SCL_PRO_MICRO;
-  		sda-gpios = MOUSE_PS2_PIN_SDA_PRO_MICRO;
+//  		sda-gpios = MOUSE_PS2_PIN_SDA_PRO_MICRO;
   	};
   };
 
@@ -166,7 +167,7 @@
   	uart_ps2: uart_ps2 {
   		status = "disabled";
   		compatible = "uart-ps2";
-  		scl-gpios = MOUSE_PS2_PIN_SCL_PRO_MICRO;
+//  		scl-gpios = MOUSE_PS2_PIN_SCL_PRO_MICRO;
   		sda-gpios = MOUSE_PS2_PIN_SDA_PRO_MICRO;
   	};
   };
@@ -175,7 +176,7 @@
   	gpio_ps2: gpio_ps2 {
   		status = "disabled";
   		compatible = "gpio-ps2";
-  		scl-gpios = MOUSE_PS2_PIN_SCL_PRO_MICRO;
+//  		scl-gpios = MOUSE_PS2_PIN_SCL_PRO_MICRO;
   		sda-gpios = MOUSE_PS2_PIN_SDA_PRO_MICRO;
   	};
   };
