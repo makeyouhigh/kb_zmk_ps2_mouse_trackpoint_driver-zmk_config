@@ -115,9 +115,8 @@
   	current-speed = MOUSE_PS2_UART_BAUD_RATE;
   	pinctrl-0 = <&uart0_ps2_default>;
   	pinctrl-1 = <&uart0_ps2_sleep>;
-  	pinctrl-2 = <&uart0_ps2_off>;
-
-  	pinctrl-names = "default", "sleep", "off";
+ 
+  	pinctrl-names = "default", "sleep";
 
   	uart_ps2: uart_ps2 {
   		status = "disabled";
