@@ -86,7 +86,6 @@
 			psels = MOUSE_PS2_PIN_UNEXPOSED_TX,
 					MOUSE_PS2_PIN_SDA_PINCTRL;
 			bias-pull-up;
-			drive-open-drain;
 		};
 	};
 
@@ -96,7 +95,6 @@
 					MOUSE_PS2_PIN_SDA_PINCTRL;
 			low-power-enable;
 			bias-pull-up;
-			drive-open-drain;
 		};
 	};
 
@@ -105,7 +103,6 @@
 			psels = MOUSE_PS2_PIN_UNEXPOSED_TX,
 					MOUSE_PS2_PIN_UNEXPOSED_RX;
 			bias-pull-up;
-			drive-open-drain;
 		};
 	};
 };
