@@ -104,6 +104,9 @@
 
     &mouse_ps2 {
 
+      // 추가
+      init-delay-ms = <2000>;
+
       // How sensitive the TP is (Default: 128)
       // tp-sensitivity = <128>;
 
